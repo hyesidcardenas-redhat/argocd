@@ -3,23 +3,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: bubble-animation
-  name: bubble-animation
-  namespace: bubble-animation
+    app: yesid-animation
+  name: yesid-animation
+  namespace: animation
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bubble-animation
+      app: yesid-animation
   strategy: {}
   template:
     metadata:
       labels:
-        app: bubble-animation
+        app: yesid-animation
     spec:
       containers:
       - image: quay.io/rhdevelopers/bgd:1.0.0
-        name: bubble-animation
+        name: yesid-animation
         env:
         - name: COLOR
           value: "blue"
