@@ -22,4 +22,4 @@ spec:
         name: yesid-animation
         env:
         - name: COLOR
-          value: "blue"
+          value: "green"
